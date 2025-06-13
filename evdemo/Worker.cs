@@ -15,7 +15,8 @@ public class Worker : BackgroundService
         {
             if (_logger.IsEnabled(LogLevel.Information))
             {
-                _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
+                string foo_str = "EV foo : '" + Environment.GetEnvironmentVariable("foo") +"'";
+                _logger.LogInformation("Worker running at: {time}, {foo_str}", DateTimeOffset.Now, foo_str);
             }
             await Task.Delay(1000, stoppingToken);
         }
