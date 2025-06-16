@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>dotnet-evdemo-97888496-d8ac-48ca-97a5-ee20166fc8a8</UserSecretsId>
+    <ContainerRepository>evdemo</ContainerRepository>
   </PropertyGroup>
 
   <ItemGroup>
