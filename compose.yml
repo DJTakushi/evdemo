@@ -1,0 +1,9 @@
+version: '3'
+services:
+  evdemo:
+    image: "evdemo:latest"
+    environment:
+      TAKUSHI_EV: 123
+      # foo: bar
+    volumes:
+      - ./host.env:/host.env:rw
