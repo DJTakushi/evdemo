@@ -33,3 +33,10 @@ dotnet publish /t:PublishContainer && docker compose up
 ```
 docker compose up
 ```
+
+
+
+# publish to repo
+```
+dotnet publish /t:PublishContainer -p ContainerRegistry=sparkplugbdemo.azurecr.io -p ContainerImageTag=0.0.00000
+```
