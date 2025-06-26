@@ -4,6 +4,10 @@ services:
     image: "evdemo:latest"
     environment:
       TAKUSHI_EV: 123
-      # foo: bar
+      # foo: ${foo}
+      foo: default_foo_value
     volumes:
-      - ./host.env:/host.env:rw
+      # - ./host.env:/host.env:rw
+      # - ./host.env:/env.conf:rw
+      - ./custom_entry.sh:/custom_entry.sh:rw
+    entrypoint: ["/bin/sh", "/custom_entry.sh"]
