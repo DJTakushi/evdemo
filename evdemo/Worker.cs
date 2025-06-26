@@ -58,8 +58,8 @@ public class Worker : BackgroundService
             // }
 
             // update env-var
-            string dval = $"MY_DEFAULT_FOO_{DateTime.Now:yyyyMMdd_HHmmss}";
-            Environment.SetEnvironmentVariable("foo", dval);
+            // string dval = $"MY_DEFAULT_FOO_{DateTime.Now:yyyyMMdd_HHmmss}";
+            // Environment.SetEnvironmentVariable("foo", dval);
 
 
 
